@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>reverie 1.o</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script defer type="text/javascript" src="render.js"></script>
+    <script defer type="text/javascript" src="preload.js"></script>
+    <script defer type="text/javascript" src="render.js"></script>
+    <!-- <link rel="icon" href="assets/Sprite-0002.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" type="/assets/reverie.png" href="image/x-icon" />
+  </head>
+  <body>
+    <h1>reverie 1.o; it's good to see you</h1>
+    <p id="banner">
+      to grow, we need to root for ourselves. <br /><br />
+      - sadman kabir
+    </p>
+
+    <div class="panels">
+      <div class="previous_entries_container">
+        <div class="loading-entries">Loading entries...</div>
+      </div>
+      <div id="next_entry">
+        <textarea id="new_entry" rows="4" placeholder="Enter your text here..."></textarea>
+        <button id="submit">
+          <span id="date">[date]</span>; LOG.
+        </button>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        updatePage();
+        changePlaceholder();
+        loadEntries();
+
+        document.getElementById('submit').addEventListener('click', sendToMainData);
+      });
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,44 @@
+{
+  "name": "reverie",
+  "productName": "reverie",
+  "version": "1.0.0",
+  "description": "easiest journal ever",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "dist": "electron-builder",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "build": {
+    "directories": {
+      "buildResources": "resources"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.5.0",
+    "@electron-forge/maker-deb": "^7.5.0",
+    "@electron-forge/maker-rpm": "^7.5.0",
+    "@electron-forge/maker-squirrel": "^7.5.0",
+    "@electron-forge/maker-zip": "^7.5.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.5.0",
+    "@electron-forge/plugin-fuses": "^7.5.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "33.0.2",
+    "electron-builder": "^25.1.8"
+  },
+  "keywords": [],
+  "author": {
+    "name": "sadman kabir, corndog-overflow",
+    "email": "kabirs@bu.edu"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "firebase": "^11.0.1",
+    "redis": "^4.7.0",
+    "sqlite3": "^5.1.7"
+  }
+}
